@@ -1,7 +1,7 @@
 import turtle
 import random
 
-turtle.speed(100000)
+turtle.speed(1000)
 turtle.setup(1000, 700)
 turtle.title("Vortex of Filled Squares!")
 turtle.hideturtle()
@@ -24,7 +24,7 @@ angle = 0
 size = 240
 while size > 0:
     draw_square(0, 0, size, angle, (random.uniform(0, 1), random.uniform(0, 1), random.uniform(0, 1),))
-    size -= 0.1
+    size -= 0.5
     angle += 3
 
 turtle.done()
